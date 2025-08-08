@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #131313f4;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: #000;
+    border-radius: 20px;
+    padding: 40px 30px;
+    width: 27%;
+    height: 50%;
+    box-shadow: 0px 0px 30px rgba(54, 54, 54, 0.408);
+}
+
+.logo {
+    width: 120px;
+    display: block;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+input {
+    width: 80%;
+    padding: 12px 14px;
+    margin-bottom: 25px;
+    background-color: #22222252;
+    color: white;
+    border: 1px solid #616161;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #1db954;
+}
+
+button {
+    width: 80%;
+    padding: 12px;
+    background-color: #1db954;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1ed760;
+}
+
+.error {
+    color: #ff4d4d;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.divider {
+    height: 1px;
+    background-color: #444;
+    margin: 35px 0;
+}
+
+.signup-text {
+    text-align: center;
+    font-size: 14px;
+
+}
+
+.signup-text a {
+    color: white;
+}
+
+.login-box{
+    width: 100%;
+    text-align: center;
+}
+
+.login-box svg{
+    fill: white;
+}
