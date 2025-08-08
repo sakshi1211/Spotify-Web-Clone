@@ -17,6 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         console.log("Redirecting to home...");
 
-        window.location.href = "/Public/index.html"; // <-- adjust if needed
+        window.location.href = "index.html"; // <-- adjust if needed
     });
 });
