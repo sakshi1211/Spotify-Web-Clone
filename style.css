@@ -30,16 +30,23 @@ body {
     fill: white;
 }
 
+
+
 .home {
     padding: 10px;
     border-radius: 50%;
     background-color: #ffffff2d;
 }
 
+.logo_text {
+    display: none;
+}
+
 .logo,
 .home {
     width: 3%;
     margin: 0px 10px;
+    display: flex;
 }
 
 .home svg {
@@ -58,7 +65,6 @@ body {
 }
 
 .nav {
-    padding: 10px;
     display: flex;
 }
 
@@ -357,12 +363,15 @@ a:hover,
 
 .thinksBox {
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
     margin-top: 15px;
 }
 
 .f_think {
-    margin-right: 20px;
-    font-size: 12px;
+    margin-right: 17px;
+    font-size: 11px;
+    margin-bottom: 10px;
     font-weight: 600;
     color: #a7a7a7;
 }
@@ -435,7 +444,7 @@ a:hover,
 .album_song_section,
 .top_song_section,
 .radio_song_section {
-    height: 60%;
+    height: 55%;
 }
 
 .section_headers {
@@ -461,7 +470,7 @@ a:hover,
 .All_albums,
 .top_song_list,
 .radio_list {
-    height: 80%;
+    height: 75%;
     width: 100%;
     display: flex;
     gap: 5px;
@@ -475,6 +484,7 @@ a:hover,
 .album_img {
     height: 70%;
     padding: 5px 5px 7px 5px;
+    margin-bottom: 10px;
     width: 100%;
 }
 
@@ -596,6 +606,7 @@ a:hover,
 }
 
 .footer_things {
+    width: 98%;
     display: flex;
     justify-content: space-between;
     padding: 10px 0px;
@@ -762,7 +773,7 @@ a:hover,
 
 /* 1200 */
 @media (max-width: 1200px) {
-    .sing_Box{
+    .sing_Box {
         width: 90%;
     }
 }
@@ -770,15 +781,16 @@ a:hover,
 /* Tablet and below (≤1024px) */
 @media (max-width: 1024px) {
 
-    .searchBox input, .searchBox .browse{
+    .searchBox input,
+    .searchBox .browse {
         display: none;
     }
 
-    .searchBox{
+    .searchBox {
         width: 6%;
     }
 
-    .inner-nav{
+    .inner-nav {
         width: 89%;
     }
 
@@ -790,15 +802,15 @@ a:hover,
 
 @media (max-width: 848px) {
 
-    .sing_Box .navBtn{
+    .sing_Box .navBtn {
         display: none;
     }
 
-    .sing_Box{
+    .sing_Box {
         width: 80%;
     }
 
-    .inner-nav{
+    .inner-nav {
         width: 85%;
     }
 
@@ -812,52 +824,24 @@ a:hover,
         overflow: auto;
     }
 
-    /* .nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .inner-nav {
-        width: 100%;
-        flex-direction: column;
-        align-items: flex-start;
+    .song_list,
+    .All_artist,
+    .All_albums,
+    .top_song_list,
+    .radio_list {
         gap: 10px;
     }
 
-    .searchBox {
-        width: 100%;
-    }
-
-    .sing_Box {
-        flex-direction: column;
-        width: 100%;
-        align-items: flex-start;
-    }
-
-    .container {
-        flex-direction: column;
-    }
-
-    .left {
-        width: 100%;
-        order: 2;
-    }
-
-    .right {
-        width: 100%;
-        order: 1;
-    } */
-
-    .song_list, .All_artist, .All_albums, .top_song_list, .radio_list {
-        gap: 10px;
-    }
-
-    .songs, .artist, .albums, .top_songs, .radio {
+    .songs,
+    .artist,
+    .albums,
+    .top_songs,
+    .radio {
         width: 140px;
     }
 }
 
-/* Small Mobile (≤480px) */
+/* Small Mobile (≤600px) */
 @media (max-width: 600px) {
     .sec_headings {
         font-size: 18px;
@@ -867,7 +851,11 @@ a:hover,
         font-size: 12px;
     }
 
-    .songs, .artist, .albums, .top_songs, .radio {
+    .songs,
+    .artist,
+    .albums,
+    .top_songs,
+    .radio {
         width: 120px;
     }
 
@@ -882,10 +870,65 @@ a:hover,
         gap: 15px;
     }
 
-    .loginBtn, .logoutBtn {
+    .loginBtn,
+    .logoutBtn {
         padding: 8px 16px;
         font-size: 14px;
     }
 }
 
+@media (max-width: 480px) {
+    .home {
+        display: none;
+    }
 
+    .logo svg{
+        height: 30px;
+        width: 30px;
+    }
+
+    .logo{
+        width: 21%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo_text {
+        display: block;
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    .inner-nav {
+        display: none;
+    }
+
+    .nav {
+        height: 50px;
+        padding-top: 10px;
+    }
+
+    .left {
+        display: none;
+    }
+
+    .right {
+        width: 100%;
+        border-radius: 0px;
+    }
+}
+
+/* base on heights for tabs */
+
+@media (min-height: 1024px) {
+
+    .trending_song_section,
+    .Popular_artist_section,
+    .album_song_section,
+    .top_song_section,
+    .radio_song_section {
+        height: 35%;
+    }
+
+}
