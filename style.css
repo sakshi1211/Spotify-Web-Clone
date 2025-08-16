@@ -877,6 +877,7 @@ a:hover,
     }
 }
 
+
 @media (max-width: 480px) {
     .home {
         display: none;
@@ -918,6 +919,7 @@ a:hover,
         border-radius: 0px;
     }
 }
+
 
 /* base on heights for tabs */
 
