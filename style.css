@@ -237,6 +237,37 @@ a:hover,
     opacity: 1;
 }
 
+/* mobile Nav Styling */
+
+.mob_nav {
+    display: none;
+}
+
+.open_app {
+    padding: 6px 13px;
+    font-weight: 700;
+    font-size: 12px;
+    border: none;
+    border-radius: 25px;
+    margin-left: 12px;
+}
+
+.bi-list {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    font-size: 20px;
+}
+
+.MobLoginBtn,
+.MobSignBtn {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+}
+
 /* Main Container styling */
 
 .container {
@@ -818,7 +849,7 @@ a:hover,
 
 }
 
-/* Mobile (≤768px) */
+/*  (≤768px) */
 @media (max-width: 768px) {
     body {
         overflow: auto;
@@ -841,7 +872,7 @@ a:hover,
     }
 }
 
-/* Small Mobile (≤600px) */
+/* (≤600px) */
 @media (max-width: 600px) {
     .sec_headings {
         font-size: 18px;
@@ -877,19 +908,19 @@ a:hover,
     }
 }
 
-
+/* Mobile device */
 @media (max-width: 480px) {
     .home {
         display: none;
     }
 
-    .logo svg{
+    .logo svg {
         height: 30px;
         width: 30px;
     }
 
-    .logo{
-        width: 21%;
+    .logo {
+        width: 22%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -907,7 +938,9 @@ a:hover,
 
     .nav {
         height: 50px;
-        padding-top: 10px;
+        padding: 10px 13px 0px 10px;
+        display: flex;
+        justify-content: space-between;
     }
 
     .left {
@@ -917,6 +950,10 @@ a:hover,
     .right {
         width: 100%;
         border-radius: 0px;
+    }
+
+    .mob_nav {
+        display: block;
     }
 }
 
@@ -931,6 +968,44 @@ a:hover,
     .top_song_section,
     .radio_song_section {
         height: 35%;
+    }
+
+}
+
+@media (max-height: 950px) {
+
+    .trending_song_section,
+    .Popular_artist_section,
+    .album_song_section,
+    .top_song_section,
+    .radio_song_section {
+        height: 30%;
+    }
+
+    .singer,
+    .artist p {
+        display: none;
+    }
+
+    .song_list,
+    .All_artist,
+    .All_albums,
+    .top_song_list,
+    .radio_list{
+        height: 95%;
+        /* background-color: #fff; */
+    } 
+    
+    .songs,
+    .artist,
+    .albums,
+    .top_songs,
+    .radio {
+        height: 80%;
+    }
+
+    .artist_img img{
+        border-radius: 10px;
     }
 
 }

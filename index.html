@@ -7,6 +7,7 @@
     <title>Spotify - Web Player: Music for everyone</title>
     <link rel="icon" href="assets/images/Spotify-favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="gitignore/node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="gitignore/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <link rel="stylesheet" href="gitignore/node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -35,6 +36,26 @@
             <span class="tooltip-text">Home</span>
         </div>
 
+        <div class="mob_nav">
+            <a href="#">
+                <button class="open_app">Open App</button>
+            </a>
+            <button class="bi bi-list" data-bs-toggle="modal" data-bs-target="#login"></button>
+
+            <div class="modal fade w-100" id="login">
+                <div class="modal-dialog modal-dialog-center modal-dialog-scrollable">
+                    <div class="modal-content bg-dark p-4">
+                        <a href="SignIn.html">
+                            <button class="MobSignBtn">Sign up</button>
+                        </a>
+                        <a href="Login.html">
+                            <button class="MobLoginBtn">Log in</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="inner-nav">
             <div class="searchBox">
                 <div class="search">
@@ -54,6 +75,7 @@
                     <span class="tooltip-text">Browse</span>
                 </div>
             </div>
+
 
             <div class="sing_Box">
                 <button class="navBtn">Premium</button>
