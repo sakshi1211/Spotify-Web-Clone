@@ -972,14 +972,14 @@ a:hover,
 
 }
 
-@media (max-height: 950px) {
+@media (max-width: 480),(max-height: 950px) {
 
     .trending_song_section,
     .Popular_artist_section,
     .album_song_section,
     .top_song_section,
     .radio_song_section {
-        height: 30%;
+        height: 32%;
     }
 
     .singer,
@@ -987,12 +987,16 @@ a:hover,
         display: none;
     }
 
+    .song_img, .album_img {
+        margin-bottom: 0px;
+    }
+
     .song_list,
     .All_artist,
     .All_albums,
     .top_song_list,
     .radio_list{
-        height: 95%;
+        height: 90%;
         /* background-color: #fff; */
     } 
     
@@ -1001,7 +1005,7 @@ a:hover,
     .albums,
     .top_songs,
     .radio {
-        height: 80%;
+        height: 90%;
     }
 
     .artist_img img{
