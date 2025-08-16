@@ -972,7 +972,9 @@ a:hover,
 
 }
 
-@media (max-width: 480),(max-height: 950px) {
+/* @media screen and (min-width: 480px) and (max-height: 800px) { */
+
+@media (max-width: 480px){
 
     .trending_song_section,
     .Popular_artist_section,
